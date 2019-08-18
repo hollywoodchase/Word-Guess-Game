@@ -1,0 +1,11 @@
+body {
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+}
+#big-pic {
+    width: 50vw;
+    height: 50vh;
+   text-align: center;
+   border: 2px solid green;
+}
