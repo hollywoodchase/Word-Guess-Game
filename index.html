@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Permanent+Marker&display=swap" rel="stylesheet">
     <title>Word-Guess-Game</title>
 </head>
 <body style="background-color: black;">
@@ -25,15 +25,34 @@
         <div id="words" class="container">
             <div id="text-col" class="row">
                 <div id="words-top" class="col-sm-12">
-                    <h1 id="text">The Great Gatsby Hangman</h1>
+                    <h1 class="text">The Great Gatsby Hangman</h1>
                 </div>
-                <div id="directions" class="col-sm-12">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div id="game-zone" class="col-sm-12">
+                    <h4><em>Enter a letter to find out if it's in the word</em></h4><br>
+                    <div id="currentLetter"><h3>Letter you pushed: </h3></div>
+                    <h2 id="dashes"></h2>
+                    <h2 id="lives"></h2>
+                    <h2 id="correct-guesses"></h2>
+                    <div id="guessed-letters">
+                        <h3 class="text">Letters Already Guessed</h3>
+                    </div>
                 </div>
+                <div id="loss-screen" class="col-sm-12 game-over end-text">
+                        <img id="nick-sad" alt="nick-sad" src="./assets/images/nick-sad.jpg">
+                        <h2 id="loss-text">Better luck next time, Old Sport</h2>
+                    </div>
+                <div id="win-screen" class="col-sm-12 game-over end-text">
+                    <img id="gatsby-gif" alt="gatsby-gif" src="assets/images/nick-goodbye.gif">
+                    <h3 id="win-text">You're better than the whole damn bunch put together</h3>
+                </div>
+                
+                
             </div>
         </div>
     </div>
-        
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+    
 </body>
 </html>

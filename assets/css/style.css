@@ -41,31 +41,62 @@ body {
 }
 /* Words */
 #words {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 50%;
     display: flex;
     justify-content: center;
     margin-top: -29em;
     height: 29em;
 }
-#text {
+.text {
     color: white;
     font-family: 'Monoton';
-    border: 2px solid white;
+    /* border: 2px solid white; */
     text-align: center;
+    margin-bottom: 0;
 }
-#directions {
+#game-zone {
     text-align: center;
     height: 75%;
     color: white;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
+}
+#dashes {
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+#guessed-letters {
+    /* border: 1px solid gold; */
+    color: white;
+    height: 40%;
+}
+.game-over {
+    display:none;
+}
+#nick-sad {
+    width: 60%;
+    height: 85%;
+    border: 1px solid gold;
+}
+#loss-screen {
+    text-align: center;
+}
+.end-text {
+    color: white;
+    font-family: 'Permanent Marker';
+    /* border: 2px solid white; */
+    text-align: center;
+}
+#gatsby-gif {
+    width: 70%;
+    margin-bottom: 1em;
 }
 
 /* Screen Adjustments */
 @media screen and (max-width: 980px) {
     #words {
         margin-top: -35em;
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
         height: 33em;
     }
   }
