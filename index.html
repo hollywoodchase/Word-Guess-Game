@@ -10,6 +10,12 @@
     <title>Word-Guess-Game</title>
 </head>
 <body style="background-color: black;">
+    <audio id="good-audio">
+        <source src="./assets/audio/good-sound.wav">
+    </audio>
+    <audio id="bad-audio">
+        <source src="./assets/audio/bad-sound.mp3">
+    </audio>
     <div id="big-container" class="container-fluid">
         <div id="pics" class="row">
             <div id="vert-banner1" class="col-sm-3">
@@ -25,16 +31,17 @@
         <div id="words" class="container">
             <div id="text-col" class="row">
                 <div id="words-top" class="col-sm-12">
-                    <h1 class="text">The Great Gatsby Hangman</h1>
+                    <h2 class="text">The Great Gatsby Hangman</h2>
                 </div>
                 <div id="game-zone" class="col-sm-12">
-                    <h4><em>Enter a letter to find out if it's in the word</em></h4><br>
+                    <h4 id="directions"><em>Press any key to get started!</em></h4><br>
                     <div id="currentLetter"><h3>Letter you pushed: </h3></div>
                     <h2 id="dashes"></h2>
                     <h2 id="lives"></h2>
-                    <h2 id="correct-guesses"></h2>
+                    <h3 id="correct-guesses">Correct guesses: 0</h3>
                     <div id="guessed-letters">
                         <h3 class="text">Letters Already Guessed</h3>
+                        <h3 id="letters" class="end-text"></h3>
                     </div>
                 </div>
                 <div id="loss-screen" class="col-sm-12 game-over end-text">
@@ -42,7 +49,7 @@
                         <h2 id="loss-text">Better luck next time, Old Sport</h2>
                     </div>
                 <div id="win-screen" class="col-sm-12 game-over end-text">
-                    <img id="gatsby-gif" alt="gatsby-gif" src="assets/images/nick-goodbye.gif">
+                    <img id="nick-goodbye" alt="nick-goodbye" src="assets/images/nick-goodbye.gif">
                     <h3 id="win-text">You're better than the whole damn bunch put together</h3>
                 </div>
                 

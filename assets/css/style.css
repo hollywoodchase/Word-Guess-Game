@@ -20,12 +20,12 @@ body {
 }
 #vert-banner1 {
     width: 25vw;
-    height: 100vh;
+    height: 99vh;
     /* border: 2px solid pink; */
 }
 #vert-banner2 {
     width: 25vw;
-    height: 100vh;
+    height: 99vh;
     /* border: 2px solid red; */
 }   
 #gatsby-poster-left {
@@ -45,8 +45,16 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: -29em;
-    height: 29em;
+    margin-top: -30em;
+    height: 30em;
+}
+#words-top {
+    /* border: .5px solid white; */
+    height: 10%;
+}
+#directions {
+    /* border: 2px solid white; */
+    /* margin-top: -25px; */
 }
 .text {
     color: white;
@@ -59,7 +67,7 @@ body {
     text-align: center;
     height: 75%;
     color: white;
-    /* border: 2px solid pink; */
+    
 }
 #dashes {
     letter-spacing: 10px;
@@ -87,9 +95,10 @@ body {
     /* border: 2px solid white; */
     text-align: center;
 }
-#gatsby-gif {
+#nick-goodbye {
     width: 70%;
     margin-bottom: 1em;
+    border: 1px solid gold;
 }
 
 /* Screen Adjustments */
