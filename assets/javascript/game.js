@@ -56,8 +56,10 @@ document.onkeyup = function(event) {
                 noDash++;
             }
             if (noDash === dashedWord.length) {
-                gameZone.classList.add('game-over');
-                winScreen.classList.remove('game-over');
+                setTimeout(function() {
+                    gameZone.classList.add('game-over');
+                    winScreen.classList.remove('game-over');
+                }, (2*1000));
                 document.onkeyup = function() {
                     location.reload();
                 } 
