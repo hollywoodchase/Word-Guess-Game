@@ -1,4 +1,4 @@
-var words = ["daisy", "jordan", "eckleberg", "gatsby", "carraway"];
+var words = ["daisy", "jordan", "eckleberg", "gatsby", "carraway", "buchanan", "wolfsheim", "myrtle", "wilson"];
 var chosenWord = words[Math.floor(Math.random()*words.length)];
 var dashedWord = [];
 var livesCount = 5;
