@@ -102,6 +102,11 @@ body {
 }
 
 /* Screen Adjustments */
+@media screen and (max-width: 1500px) {
+    #gatsby-head {
+        margin-top: 20px;
+    }
+}
 @media screen and (max-width: 980px) {
     #words {
         margin-top: -35em;
@@ -113,6 +118,9 @@ body {
     #words {
         margin-top: -37.5em;
         height: 36em;
+    }
+    #directions {
+        margin-top: 20px;
     }
   }
   @media screen and (max-width: 640px) {

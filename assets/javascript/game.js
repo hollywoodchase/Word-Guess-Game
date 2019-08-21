@@ -5,6 +5,7 @@ var livesCount = 5;
 var winCount = 0;
 var wrongLetters = "";
 var correctCount = 0;
+var repeatArr = [];
 
 splitWord = chosenWord.split('');
 for (let i = 0; i < splitWord.length; i++) {
@@ -37,7 +38,10 @@ document.onkeyup = function(event) {
             }
             dashedWord=dashedWord.join('');
             dashes.innerHTML=dashedWord;
-            correctCount++;
+            if(!(repeatArr.includes(splitWord[j]))) {
+                correctCount++;
+            };
+            repeatArr.push(splitWord[j]);
             correctGuesses.innerHTML="<h3 id='correct-guesses'>Correct guesses: " + correctCount + "</h3>";
         } 
         else {
@@ -59,7 +63,7 @@ document.onkeyup = function(event) {
                 setTimeout(function() {
                     gameZone.classList.add('game-over');
                     winScreen.classList.remove('game-over');
-                }, (2*1000));
+                }, (1000));
                 document.onkeyup = function() {
                     location.reload();
                 } 
